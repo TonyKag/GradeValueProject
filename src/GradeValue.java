@@ -36,11 +36,24 @@ private static Scanner scanner;
 		
 		System.out.println("Grade:" + gradeValue);
 		
-		
-
-		
-		
-		
-
-	}
+		// Check that the grade is under 100 but greater or equal to 80
+		if(gradeValue <= 100 && gradeValue >= 80) {
+			// Print out the grade to the user
+			System.out.println("Your grade is an A.");
+		} else if(gradeValue <= 80 && gradeValue >= 70) {
+				// Print out the grade to the user
+				System.out.println("Your grade is a B.");
+			} else if(gradeValue <= 70 && gradeValue >= 60) {
+					// Print out the grade to the user
+					System.out.println("Your grade is a C.");
+				} else	if(gradeValue <= 60 && gradeValue >= 50) {
+						// Print out the grade to the user
+						System.out.println("Your grade is a D.");
+					} else if(gradeValue <= 50 && gradeValue >= 0) {
+							// Print out the grade to the user
+							System.out.println("Your grade is an F.");
+						} else {
+							System.out.println("Incorrect value entered:" + gradeValue);
+							}
+			}
 }
